@@ -1,9 +1,23 @@
 .img{
     width: 50px;
+    padding: 5px;
+    margin-left:0;
+    margin-top: 40px;
 }
 h1{
+  margin-top: 0;
     text-align: center;
     font-family: sans-serif;
+}
+h3{
+  text-align: center;
+  font-family: sans-serif;
+}
+.navbar{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 ul {
     list-style-type: none;
@@ -31,14 +45,20 @@ ul {
   li a:hover {
     background-color: #111;
   }
-@media (max-width: 650px) {
-    #about {
-      margin-top: 0;
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
     }
   }
-@media (max-width: 800px)
-{
-    h1{
-        font-size: 50px;
-    }
-}
+  .flex-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #about{
+    margin-right: 50px;
+    margin-left: 25px;
+
+  }
